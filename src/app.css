@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap');
+
+
+body {
+    background-color: darkslategrey;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: Nunito Sans;
+    box-sizing: border-box;
+
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+#App, .Panel, .PanelPlain, .data-table {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+    margin-top: 0;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.45);
+}
+
+.Panel {
+    box-sizing: border-box;
+    background-image: url('./carbon-coal.jpg');
+    background-color: rgba(0,0,0,0.75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: greenyellow;
+    font-size: x-large;
+    min-height: 400px;
+}
+
+.PanelPlainBlur {
+    box-sizing: border-box;
+    pointer-events: none;
+    filter: blur(20px);
+    background-image: url('./carbon-coal.jpg');
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.PanelPlain {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: x-large;
+    position: relative;
+}
+
+#PanelContainer {
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.Panel header {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+    top: 0;
+    border: none;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.detail-header {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    font-size: xxx-large;
+    letter-spacing: -5px;
+    padding: 5px;
+    line-height: normal;
+    margin: 5px;
+}
+
+h3:nth-child(odd) {
+    color: lightslategrey;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: xx-large;
+    letter-spacing: -2px;
+    padding: 5px;
+    color: white;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-size: x-large;
+    padding: 5px;
+    letter-spacing: -1px;
+    color: white;
+}
+
+.Panel body {
+    box-sizing: border-box;
+    font-size: medium;
+    color: black;
+    background-color: antiquewhite;
+}
+
+.data-header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.data-body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.textShadow {
+    text-shadow: 1px 1px #000000;
+}
+
+.data-table {
+    box-sizing: border-box;
+    display: table;
+    background-color: rgba(255,255, 255, 0.85);
+    width: 80%;
+    text-align: left;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.data-table-row {
+    box-sizing: border-box;
+    display: table-row;
+    cursor: pointer;
+}
+
+.data-table-row:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+.data-table-row:hover {
+    opacity: 0.5;
+}
+
+.data-table-header {
+    box-sizing: border-box;
+    display: table-header-group;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+.data-table-body {
+    box-sizing: border-box;
+    display: table-row-group;
+}
+
+.data-table-header .cell {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    font-size: small;
+}
+
+.cell {
+    box-sizing: border-box;
+    display: table-cell;
+    font-size: medium;
+    padding: 8px;
+}
+
+.data-table-container {
+    box-sizing: border-box;
+    border-radius: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.row span:nth-child(1){
+    opacity: 0.75;
+}
+
+label {
+    color: white;
+}
+
+input[type=text] {
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.sort {
+    position: absolute;
+    color: white;
+    right: 0;
+    margin-top: -2px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+.sortIcons {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    box-sizing: border-box;
+    color: greenyellow;
+    width: 100%;
+    overflow: hidden;
+}
+
+.data-table-row-none {
+    display: table-row;
+    text-align: center;
+}
+
+.data-table-row-none .cell {
+}
+
+.dates {
+    position: relative;
+    min-height: 50px;
+    opacity: 0.25;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider:nth-child(1) {
+    margin-top: 0;
+}
+.slider:nth-child(2) {
+    margin-top: 50px;
+}
+
+.slider .cell {
+    position: absolute;
+}
+
+.slider .cell-right {
+    position: absolute;
+}
+
+[data-reach-slider-track] {
+    background-color: black !important;
+}
+
+[data-reach-slider-range], [data-reach-slider-handle] {
+    background-color: greenyellow !important;
+}
+
+.generation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    width: 400px;
+    background-color: darkgreen;
+    border-radius: 10px;
+}
+
+.generations {
+    overflow: scroll !important;
+    pointer-events: all !important;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.generations-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    h3 {
+        margin: 0;
+    }
+}
+
+@media(max-width:425px) {
+    #App, .Panel, .PanelPlain, .data-table {
+        width: 100%;
+    }
+}
+
+@media(min-width:425px) {
+    #App, .Panel, .PanelPlain, .data-table {
+        width: 100%;
+    }
+}
